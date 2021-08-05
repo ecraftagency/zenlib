@@ -8,7 +8,7 @@ repositories {
 }
 
 group 'com.zen'
-version '1.0.40'
+version '1.0.41'
 
 sourceCompatibility = 1.8
 
@@ -21,6 +21,16 @@ publishing {
                 username = project.findProperty("gpr.user")
                 password = project.findProperty("gpr.key")
             }
+
+//            name = "Gitlab"
+//            url = "https://gitlab.com/api/v4/groups/zensoftvn/-/packages/maven"
+//            credentials(HttpHeaderCredentials) {
+//                name = 'Private-Token'
+//                value = gitLabPrivateToken
+//            }
+//            authentication {
+//                header(HttpHeaderAuthentication)
+//            }
         }
     }
     publications {
